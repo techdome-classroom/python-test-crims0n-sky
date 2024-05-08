@@ -2,12 +2,11 @@ class Solution:
    
     def getTotalIsles(self, grid: list[list[str]]) -> int:
     #    write your code here
-                    def num_islands(grid):
-    if not grid:
-        return 0
+        if not grid:
+            return 0
 
-    island_count = 0
-    rows, cols = len(grid), len(grid[0])
+        island_count = 0
+        rows, cols = len(grid), len(grid[0])
 
     def dfs(i, j):
         if i < 0 or j < 0 or i >= rows or j >= cols or grid[i][j]!= 'L':
