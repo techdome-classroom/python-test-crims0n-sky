@@ -12,7 +12,7 @@ class Solution:
             if i < 0 or j < 0 or i >= rows or j >= cols or grid[i][j]!= 'L':
                 return
             grid[i][j] = 'D'
-            
+            if 
 
         for i in range(rows):
             for j in range(cols):
