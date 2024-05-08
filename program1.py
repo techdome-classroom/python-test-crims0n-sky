@@ -11,7 +11,7 @@ class Solution:
         def dfs(i, j):
             if i < 0 or j < 0 or i >= rows or j >= cols or grid[i][j]!= 'L':
                 return
-            grid[i][j] = "W"  
+            
 
         for i in range(rows):
             for j in range(cols):
