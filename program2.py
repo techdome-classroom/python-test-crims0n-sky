@@ -14,7 +14,4 @@ def decode_message( s: str, p: str) -> bool:
                                 elif p[j]=="?":
                                         if s==p:
                                                 return True
-                                
-
-  
-        return False
+        return True
