@@ -9,8 +9,13 @@ def decode_message( s: str, p: str) -> bool:
                         for j in range(len(p)):
                                 if s[i]!= p[j] and p[j]!="*" and p[j]!= "?":
                                         return False
-                                elif p[j]=="*":
+                                elif p[j]=="*" and j==len(p):
                                         return True
                                 elif p[j]=="?":
-                                        
-        return True
+
+                                        if s==p:
+                                                return True
+                                
+
+  
+        return False
