@@ -14,7 +14,7 @@ class Solution:
             grid[i][j] = 'D'
             if i>0 and j>0:
                 dfs(i-1, j-1)
-            if 
+            if i>0 and j<len()
 
         for i in range(rows):
             for j in range(cols):
