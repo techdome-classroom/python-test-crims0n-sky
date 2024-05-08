@@ -19,4 +19,4 @@ class Solution:
                 if grid[i][j] == "L":
                     dfs(i, j)
                     count += 1
-        return island_count
+        return count
