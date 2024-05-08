@@ -7,7 +7,7 @@ def decode_message( s: str, p: str) -> bool:
         else:
                 for i in range(len(s)):
                         for j in range(len(p)):
-                                is s[i]
+                                is s[i]!= p[j]
                                 
 
   
