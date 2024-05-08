@@ -5,7 +5,7 @@ class Solution:
         if not grid:
             return 0
 
-        island_count = 0
+        count = 0
         rows, cols = len(grid), len(grid[1])
 
         def dfs(i, j):
