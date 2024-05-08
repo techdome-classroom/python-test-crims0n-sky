@@ -18,5 +18,5 @@ class Solution:
             for j in range(cols):
                 if grid[i][j] == "L":
                     dfs(i, j)
-                    island_count += 1
+                    count += 1
         return island_count
