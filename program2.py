@@ -10,7 +10,9 @@ def decode_message( s: str, p: str) -> bool:
                                 if s[i]==p[j]:
                                         ans=True
                                 elif p[j]=="*":
-                                        
+                                        ans=True
+                                else:
+                                        ans=False
                                 
 
   
