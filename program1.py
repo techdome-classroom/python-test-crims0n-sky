@@ -13,13 +13,13 @@ class Solution:
                 return
             grid[i][j] = 'W'  # Mark as visited
             dfs(i - 1, j)  # Up
-        dfs(i + 1, j)  # Down
-        dfs(i, j - 1)  # Left
-        dfs(i, j + 1)  # Right
+            dfs(i + 1, j)  # Down
+            dfs(i, j - 1)  # Left
+            dfs(i, j + 1)  # Right
 
-    for i in range(rows):
-        for j in range(cols):
-            if grid[i][j] == 'L':
-                dfs(i, j)
-                island_count += 1
-    return island_count
+        for i in range(rows):
+            for j in range(cols):
+                if grid[i][j] == 'L':
+                    dfs(i, j)
+                    island_count += 1
+        return island_count
