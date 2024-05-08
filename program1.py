@@ -6,7 +6,7 @@ class Solution:
             return 0
 
         island_count = 0
-        rows, cols = len(grid), len(grid[0])
+        rows, cols = len(grid), len(grid[1])
 
         def dfs(i, j):
             if i < 0 or j < 0 or i >= rows or j >= cols or grid[i][j]!= 'L':
