@@ -8,11 +8,11 @@ class Solution:
         island_count = 0
         rows, cols = len(grid), len(grid[0])
 
-    def dfs(i, j):
-        if i < 0 or j < 0 or i >= rows or j >= cols or grid[i][j]!= 'L':
-            return
-        grid[i][j] = 'W'  # Mark as visited
-        dfs(i - 1, j)  # Up
+        def dfs(i, j):
+            if i < 0 or j < 0 or i >= rows or j >= cols or grid[i][j]!= 'L':
+                return
+            grid[i][j] = 'W'  # Mark as visited
+            dfs(i - 1, j)  # Up
         dfs(i + 1, j)  # Down
         dfs(i, j - 1)  # Left
         dfs(i, j + 1)  # Right
